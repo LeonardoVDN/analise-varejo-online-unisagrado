@@ -1,58 +1,49 @@
-# Análise de Tendências de Mercado de Varejo Online
+# 📊 Análise de Tendências de Mercado de Varejo Online
 
-## Apresentação do Projeto
+## 🎯 Visão Geral
 
-Este é um projeto de Analise de Dados e BI em conjunto com o centro universitario UNISAGRADO, seguindo as orientações do professor orientador VICTOR HUGO BRAGUIM CANTO.
+Projeto desenvolvido em parceria com o Centro Universitário UNISAGRADO, sob orientação do Prof. Dr. Victor Hugo Braguim Canto, aplicando conceitos avançados de **Análise de Dados** e **Business Intelligence** para explorar o comportamento de vendas no e-commerce brasileiro.
 
-Esse projeto aplica conceitos de **Análise de Dados** e **Business Intelligence** para explorar o comportamento de vendas no e-commerce brasileiro. A partir do dataset público "Brazilian E-commerce Public Dataset" (Kaggle).
+---
 
-## Breve Apresentação
+## 💡 Problema de Pesquisa
 
-* **Motivação**: entender tendências de vendas, categorias de maior receita e padrões de comportamento.
-* **Metodologia**: pipeline de ETL em notebooks, EDA, testes estatísticos e clustering.
-* **Resultados**: insights sobre categorias de baixo/alto ticket, evolução de receita e agrupamentos de produtos.
-* **Ferramenta final**: dashboard interativo que permite filtrar categorias, períodos e visualizar KPIs e clusters.
+> **Como podemos agrupar categorias de produtos com perfis semelhantes de ticket médio, avaliação e volume, para orientar decisões de marketing e estoque focadas em maximizar receita e satisfação do cliente?**
 
-### Esse projeto foi idealizado por um grupo de 3 alunos:
-Leonardo Valentim do Nascimento
-Udymilla Gonçalves Chagas
-Natasha Cristine Barbosa
+---
 
-### Proposta e Objetivos Gerais do Projeto
-Você e seu grupo devem propor, desenvolver e apresentar um projeto aplicado de Ciência de Dados que explore um problema real ou uma oportunidade de melhoria em qualquer área (ex.: saúde, educação, finanças, meio ambiente, esportes, varejo, logística etc.).
+## 👥 Equipe
 
-Objetivos Gerais
-Identificar uma fonte de dados relevante (preferencialmente pública).
+* **Leonardo Valentim do Nascimento**
+* **Udymilla Gonçalves Chagas**
+* **Natasha Cristine Barbosa**
 
-Formular uma pergunta ou problema orientador.
+---
 
-Aplicar conceitos e ferramentas da Ciência de Dados para responder ou solucionar a questão proposta.
+## 📑 Objetivos do Projeto
 
-Apresentar os resultados de forma clara, visual e fundamentada.
+* Identificar padrões de comportamento de consumo no e-commerce brasileiro
+* Analisar tendências de vendas e categorias de maior receita
+* Desenvolver agrupamentos (clusters) de produtos com características semelhantes
+* Criar um dashboard interativo para visualização dinâmica dos resultados
+* Fornecer insights acionáveis para decisões de marketing e gestão de estoque
 
-Utilize Python ou R.
+---
 
-### pergunta ou problema orientador.
-Como podemos agrupar categorias de produtos com perfis semelhantes de ticket médio, avaliação e volume, para orientar decisões de marketing e estoque focadas em maximizar receita e satisfação do cliente?
+## 🔍 Metodologia
 
-### Arquivos e notebooks do projeto
-1. **Carga e inspeção inicial dos dados** (`00-load.ipynb`)
-2. **Limpeza e integração** de tabelas e criação de métricas derivadas (`01-clean.ipynb`)
-3. **Exploração de dados (EDA)**: vendas por categoria, evolução mensal, distribuição de preços e avaliações (`02-eda.ipynb`)
-4. **Análise de correlações e testes estatísticos** (ANOVA) entre variáveis-chave (`03-corr.ipynb`)
-5. **Clustering** de categorias para identificar grupos com perfis de venda semelhantes (`04-cluster.ipynb`)
-6. **Dashboard interativo** em Streamlit para visualização dinâmica dos resultados (`app.py`)
+O projeto emprega uma metodologia completa de ciência de dados:
 
-## Tecnologias e Bibliotecas
+1. **Extração de Dados:** Utilização do dataset público "Brazilian E-commerce Public Dataset" (Kaggle)
+2. **Transformação:** Pipeline ETL para limpeza e integração de dados
+3. **Análise Exploratória:** Identificação de padrões e tendências nos dados
+4. **Análise Estatística:** Testes de correlação e ANOVA entre variáveis-chave
+5. **Machine Learning:** Técnicas de clustering para segmentação de categorias
+6. **Visualização:** Dashboard interativo para exploração dos resultados
 
-* Python 3.8+
-* Jupyter Notebook
-* pandas, numpy
-* matplotlib, plotly
-* scikit-learn, scipy
-* streamlit
+---
 
-## Estrutura do Repositório
+## 📂 Estrutura do Projeto
 
 ```
 / (raiz)
@@ -70,7 +61,47 @@ Como podemos agrupar categorias de produtos com perfis semelhantes de ticket mé
     └── 04-cluster.ipynb     # Clustering de categorias
 ```
 
-## Passo a Passo para Rodar Localmente
+---
+## 🛠️ Tecnologias Utilizadas
+
+* **Python 3.8+**
+* **Jupyter Notebook** - Desenvolvimento e documentação
+* **pandas & numpy** - Manipulação e análise de dados
+* **matplotlib & plotly** - Visualização de dados
+* **scikit-learn & scipy** - Modelagem estatística e machine learning
+* **streamlit** - Dashboard interativo
+
+---
+## 🔢 Fluxo de Análise
+
+1. **Carga e inspeção inicial dos dados** (00-load.ipynb)
+   * Importação dos datasets originais
+   * Análise preliminar de estrutura e qualidade
+
+2. **Limpeza e integração** (01-clean.ipynb)
+   * Tratamento de valores ausentes e outliers
+   * Integração das tabelas relacionadas
+   * Criação de métricas derivadas
+
+3. **Exploração de dados (EDA)** (02-eda.ipynb)
+   * Análise de vendas por categoria
+   * Evolução mensal de receita
+   * Distribuição de preços e avaliações
+
+4. **Análise estatística** (03-corr.ipynb)
+   * Identificação de correlações entre variáveis
+   * Testes ANOVA para validação de hipóteses
+
+5. **Clustering** (04-cluster.ipynb)
+   * Segmentação de categorias por perfil de vendas
+   * Identificação de grupos com características semelhantes
+
+6. **Dashboard interativo** (app.py)
+   * Visualização dinâmica dos resultados
+   * Filtros por categoria, período e clusters
+---
+
+## 🚀 Instruções para Execução
 
 ### 1. Clonar o Repositório
 
@@ -125,3 +156,32 @@ streamlit run app.py
 ```
 
 Abra o link exibido (geralmente [http://localhost:8501](http://localhost:8501)) para interagir com o dashboard.
+
+---
+
+## 📈 Principais Resultados
+
+- **Identificação de categorias de alto e baixo ticket médio**  
+  Encontramos quais grupos de produtos geram maior receita por pedido e quais mantêm preços mais acessíveis.
+
+- **Análise da evolução temporal de receita por segmento**  
+  Visualizamos como a receita mensal se comporta ao longo do período de estudo para cada categoria selecionada.
+
+- **Segmentação de produtos em clusters com características semelhantes**  
+  Aplicamos K-Means para agrupar categorias em perfis homogêneos de ticket médio, avaliação e volume de vendas.
+
+- **Dashboard interativo para exploração dinâmica dos resultados**  
+  Implementamos um app em Streamlit com filtros de categoria, período e cluster, exibindo KPIs, séries temporais e dispersões interativas.
+
+---
+
+## 📝 Contexto Acadêmico
+
+Este projeto foi desenvolvido como parte da disciplina de Análise de Dados e Business Intelligence do Centro Universitário UNISAGRADO, seguindo as diretrizes estabelecidas pelo professor orientador Victor Hugo Braguim Canto.
+
+---
+
+## 📚 Referências
+
+* Dataset: [Brazilian E-commerce Public Dataset by Olist](https://www.kaggle.com/olistbr/brazilian-ecommerce)
+* Documentação das bibliotecas: [pandas](https://pandas.pydata.org/docs/), [scikit-learn](https://scikit-learn.org/stable/documentation.html), [Streamlit](https://docs.streamlit.io/)
