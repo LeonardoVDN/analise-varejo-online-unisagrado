@@ -44,10 +44,6 @@ VS Code settings
 
 .vscode/
 
-Data files
-
-data/*.csv
-
 Streamlit cache
 
 .streamlit/
