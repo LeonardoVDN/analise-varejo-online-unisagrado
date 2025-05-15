@@ -1,5 +1,6 @@
 kagglehub
 pandas
 numpy
+jupyter
 streamlit 
 plotly
